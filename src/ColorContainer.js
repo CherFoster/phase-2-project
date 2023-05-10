@@ -12,7 +12,6 @@ function ColorContainer() {
 
   return (
     <div>
-      <h1>Color Palettes</h1>
         {colors.map((color) => (
         <ColorCard key={color.id} color={color} />
         ))}
