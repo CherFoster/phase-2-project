@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react';
+import ColorCard from './ColorCard';
 
 function ColorContainer() {
   const [colors, setColors] = useState([]);
 
   useEffect(() => {
-    fetch('http://www.colourlovers.com/api/colors')
+    fetch('http://localhost:8000/colors')
       .then(response => response.json())
       .then(data => setColors(data))
       .catch(error => console.error(error));
@@ -13,11 +14,11 @@ function ColorContainer() {
   return (
     <div>
       <h1>Color List</h1>
-      <ul>
-        {colors.map(color => (
-          <li key={color.id}>{color.title}</li>
-        ))}
-      </ul>
+        {colors.map(color => {
+            return (
+                <ColorCard key={color.id} color={color} />
+            )
+        })}
     </div>
   );
 }
