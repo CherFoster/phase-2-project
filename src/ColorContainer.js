@@ -13,11 +13,7 @@ function ColorContainer() {
   return (
     <div>
       <h1>Color Palettes</h1>
-        {colors.map(color => {
-            return (
-                <ColorCard key={color.id} color={color} />
-            )
-        })}
+        {colors.map(color => <ColorCard key={color.id} color={color} />)}
     </div>
   );
 }

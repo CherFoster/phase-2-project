@@ -4,31 +4,36 @@
             "id": 1,
             "name": "Rosettes and Cream",
             "image": "https://i.postimg.cc/pdvq5LC4/rosette.png",
-            "description": "Hot-Pink Cream Spearmint Rosewater"
+            "description": "Hot-Pink Cream Spearmint Rosewater",
+            "numbers": "#EF7C8E #FAE8E0 #B6E2D3 #D8A7B1"
         },
         {
             "id": 2,
             "name": "Rosy Flamingo",
             "image": "https://i.postimg.cc/hj5LsD8S/rosy-flamingo.png",
-            "description": "Rosewater Dusty-Rose Coffee-Pot Coffee-Pot"
+            "description": "Rosewater Dusty-Rose Coffee-Pot Coffee-Pot",
+            "numbers": "#E8B4B8 #EED6D3 #A49393 #67595E"
         },
         {
             "id": 3,
             "name": "Pastel Dreams",
             "image": "https://i.postimg.cc/FFVRMjTw/pastel-dreams.png",
-            "description": "Yellow Mint Tiffany-Blue Hot-Pink"
+            "description": "Yellow Mint Tiffany-Blue Hot-Pink",
+            "numbers": "#FBE7C6 #B4F8C8 #A0E7E5 #FFAEBC"            
         },
         {
             "id": 4,
             "name": "Summer Splash",
             "image": "https://i.postimg.cc/q7VjCV2t/summer-dreams.png",
-            "description": "Navy-Blue Blue-Grotta Blue-Green Baby-Blue"
+            "description": "Navy-Blue Blue-Grotta Blue-Green Baby-Blue",
+            "numbers": "#05445E #189AB4 #75E6DA #D4F1F4"  
         },
         {
             "id": 5,
             "name": "Facing Forward",
             "image": "https://i.postimg.cc/hjHv1B1m/facing-forward.png",
-            "description": "Sand-Dollar Teal Navy-Blue Red"
+            "description": "Sand-Dollar Teal Navy-Blue Red",
+            "numbers": "#E5DDC8 #01949A #004369 #DB1F48" 
         }
 
     ]
