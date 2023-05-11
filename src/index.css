@@ -69,3 +69,20 @@ h4 {
 .navbar a:hover {
   color: hsl(244, 70%, 49%);
 }
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+form button {
+  padding: 0.5rem;
+  background-color: rgb(12, 12, 12);
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  border: none;
+}
+.label {
+  padding: 10px;
+}
