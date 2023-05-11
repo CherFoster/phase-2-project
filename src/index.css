@@ -4,12 +4,19 @@
   color: #333;
 }
 body {
-  background-color: #FEF7EF;
+  background-color: #ffffff;
 }
 h1 {
   font-size: 50px;
   text-align: center;
   padding: 40px;
+}
+.banner {
+  display: block;
+  max-width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 h3 {
   text-align: center;
