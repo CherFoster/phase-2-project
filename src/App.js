@@ -1,5 +1,5 @@
 import React from 'react';
-import ColorContainer from './ColorContainer';
+import MusicContainer from './MusicContainer';
 import NavBar from './NavBar';
 
 
@@ -8,7 +8,7 @@ function App() {
     <div>
       <NavBar />
 
-      <ColorContainer />
+      <MusicContainer />
     </div>
   );
 }

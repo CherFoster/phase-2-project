@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 
-function ColorCard({ color }) {
+function MusicCard({ music }) {
     const [showInfo, setShowInfo] = useState(false);
 
     function handleClick() {
@@ -9,16 +9,15 @@ function ColorCard({ color }) {
 
     return (
         <div className="color-card">
-            <h3>{color.name}</h3>
-            <img className="picture" src={color.image} alt="colors" onClick={handleClick}/>
+            <h3>{music.name}</h3>
+            <img className="picture" src={music.image} alt="colors" onClick={handleClick}/>
         
             {showInfo && (
             <div>
-             <h4>{color.description}</h4>
-             <p>{color.numbers}</p>
+             <h4>{music.instrument}</h4>
             </div>)}
         </div>
     )
 }
 
-export default ColorCard; 
+export default MusicCard; 

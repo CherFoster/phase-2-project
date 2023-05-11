@@ -4,9 +4,9 @@ import { NavLink } from 'react-router-dom';
 function NavBar() {
     return (
     <nav className="navbar">
-        <h1>Color Palettes</h1>
         <a href='/'>Home</a>
-        <a href='/create' className="new-palette">Add a color palette</a>
+        <a href='/about'>About</a>
+        <a href='/create' className="new-palette">Add Sheet Music</a>
     </nav>
     );
 }
