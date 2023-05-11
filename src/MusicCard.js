@@ -8,14 +8,14 @@ function MusicCard({ music }) {
       }
 
     return (
-        <div className="color-card">
+        <div className="music-card">
             <h3>{music.name}</h3>
-            <img className="picture" src={music.image} alt="colors" onClick={handleClick}/>
-        
-            {showInfo && (
-            <div>
-             <h4>{music.instrument}</h4>
-            </div>)}
+            <img className="picture" 
+            src={music.image} 
+            alt="colors" 
+            onClick={handleClick}/>
+            <h4>By {music.musician}</h4>
+            {showInfo}
         </div>
     )
 }

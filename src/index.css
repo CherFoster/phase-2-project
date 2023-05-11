@@ -5,6 +5,7 @@
 }
 body {
   background-color: #ffffff;
+  text-align: center;
 }
 h1 {
   font-size: 50px;
@@ -23,7 +24,6 @@ h3 {
 }
 h4 {
   text-align: center;
-  word-spacing: 200px;
 }
 .delete {
   display: block;
@@ -32,49 +32,40 @@ h4 {
   background-color: #FEF7EF;
   border-radius: 0px; 
 }
-p {
-  text-align: center;
-  word-spacing: 215px;
-  font-size: smaller;
+.music-card {
+  padding: 30px;
+  width: auto;
+  height: auto;
+  display: inline-block;
+  margin: 30px;
+  border-radius:50px;
+}
+.picture:hover {
+  box-shadow: 8px 11px 14px rgba(0,0,0,0.1);
 }
 .picture {
   display: block;
   margin-left: auto;
   margin-right: auto;
   border-radius: 10px; 
-  height: 100px;
+  height: 150px;
   width: 200px;
   max-width: 100%;
 };
-.color-card {
-  text-align: center;
-  background-color: white;
-  padding: 20px;
-  width: 10%;
-  height: 15%;
-  display: inline-block;
-  margin: 30px;
-  border-radius:50px;
-}
-img:hover {
-  box-shadow: 8px 11px 14px rgba(0,0,0,0.1);
-}
 .navbar {
   padding: 20px;
   display: flex;
-  align-items: center;
   max-width: 600px;
   margin: 0 auto;
   border-bottom: 1px solid #f2f2f2;
 }
-/* .navbar .links {
-  margin-left: auto;
-} */
+
 .navbar a {
+  display: inline;
   margin-left: 16px;
   text-decoration: none;
   padding: 6px;
 }
 .navbar a:hover {
-  color: hsl(310, 70%, 74%);
+  color: hsl(244, 70%, 49%);
 }
