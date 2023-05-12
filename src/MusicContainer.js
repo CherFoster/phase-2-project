@@ -12,7 +12,7 @@ function MusicContainer() {
 
 
   return (
-    <div>
+    <div className='container'>
         {musicList.map((music) => (
         <MusicCard key={music.id} music={music} />
         ))}

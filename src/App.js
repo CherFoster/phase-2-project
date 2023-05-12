@@ -1,7 +1,7 @@
 import React from 'react';
 import MusicContainer from './MusicContainer';
 import NavBar from './NavBar';
-import Home from './Home';
+import Banner from './Banner';
 import NewForm from './MusicForm';
 import MusicForm from './MusicForm';
 
@@ -9,7 +9,7 @@ import MusicForm from './MusicForm';
 function App() {
   return (
     <div>
-      <Home />
+      <Banner />
       <NavBar />
       <MusicForm />
 
