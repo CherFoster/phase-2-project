@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from "react-router-dom";
 
 function MusicForm() {
@@ -9,7 +9,7 @@ function MusicForm() {
   const [musician, setMusician] = useState('');
   const [link, setLink] = useState('');
   const [instrument, setInstrument] = useState('');
-  const [image, setImage] = useState('')
+  const [image, setImage] = useState('');
 
   const history = useNavigate();
 
@@ -22,6 +22,7 @@ function MusicForm() {
         link: link,
         instrument: instrument
     }
+
     fetch("http://localhost:8000/musicList", {
         method: "POST",
         headers: {
@@ -30,13 +31,13 @@ function MusicForm() {
         body: JSON.stringify(formData)
     })
         .then(r => r.json())
-        .then(() => history('/saved'))
+        .then(() => history('/saved'));
 
     setName('');
     setMusician('');
     setLink('');
     setInstrument('');
-    setImage(defaultImg)
+    setImage(defaultImg);
   }
 
   return (
