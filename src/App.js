@@ -11,10 +11,11 @@ function App() {
     <div>
       <NavBar />
       <Routes>
-        <Route path="/Home" element={<Home />} />
-        <Route path="/saved" element={<Saved />} />
+        <Route exact path="/Home" element={<Home />} />
+        <Route exact path="/saved" element={<Saved />} />
         <Route exact path="/create" element={<MusicForm />} />
-        <Route path="/" element={<Home />} />
+        <Route exact path="/" element={<Home />} />
+        <Route path='*' element={<h1>404 not found</h1>} />
       </Routes>
 
     </div>
