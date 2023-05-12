@@ -27,6 +27,10 @@ Next, install the react router dom by running the command in your terminal:
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
+## Visuals
+
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/XjT35D8/GIF1.gif" alt="GIF1" border="0"></a>
+
 ## Support
 For questions, please reach out to cherise.foster@gmail.com.
 
