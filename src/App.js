@@ -5,8 +5,6 @@ import Home from './Home';
 import MusicContainer from './MusicContainer';
 import MusicForm from './MusicForm';
 
-
-
 function App() {
   return (
     <div>
@@ -18,7 +16,6 @@ function App() {
         <Route exact path="/" element={<Home />} />
         <Route path='*' element={<h1>404 not found</h1>} />
       </Routes>
-
     </div>
   );
 }

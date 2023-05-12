@@ -16,7 +16,6 @@ function Home() {
                 <li><Link to='https://musescore.com/'>🎼 MuseScore</Link></li>
                 <li><Link to='https://www.jellynote.com/en'>🎼 Jellynote</Link></li>
                 <li><Link to='https://www.8notes.com/'>🎼 8 Notes</Link></li>
-
             </ul>
         </div>
     )

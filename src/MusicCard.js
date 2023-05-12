@@ -6,7 +6,7 @@ function MusicCard({ music }) {
     const [showInfo, setShowInfo] = useState(false);
 
     function handleClick() {
-        setShowInfo(!showInfo)
+        setShowInfo(!showInfo);
       }
 
     return (
@@ -16,7 +16,9 @@ function MusicCard({ music }) {
             src={defaultImg} 
             alt="colors" 
             onClick={handleClick}/>
+
             <h4>By {music.musician}</h4>
+
             {showInfo && (
                 <div>
                 <h4>Instrument: {music.instrument}</h4>
