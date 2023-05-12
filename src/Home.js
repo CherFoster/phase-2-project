@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 
 function Home() {
     return (
@@ -12,9 +13,9 @@ function Home() {
             Check out the links below for free sheet music:
             <br/>
             <ul className="links">
-                <li><a href='https://musescore.com/'>🎼 MuseScore</a></li>
-                <li><a href='https://www.jellynote.com/en'>🎼 Jellynote</a></li>
-                <li><a href='https://www.8notes.com/'>🎼 8 Notes</a></li>
+                <li><Link to='https://musescore.com/'>🎼 MuseScore</Link></li>
+                <li><Link to='https://www.jellynote.com/en'>🎼 Jellynote</Link></li>
+                <li><Link to='https://www.8notes.com/'>🎼 8 Notes</Link></li>
 
             </ul>
         </div>

@@ -25,8 +25,8 @@ const MusicForm = () => {
         <input
           type="text"
           value={name}
+        //   onChange updates the state as the user types
           onChange={(e) => setName(e.target.value)}
-          required
         />
       </label>
 
@@ -45,7 +45,6 @@ const MusicForm = () => {
           type="url"
           value={link}
           onChange={(e) => setLink(e.target.value)}
-          required
         />
       </label>
 
@@ -55,7 +54,6 @@ const MusicForm = () => {
           type="text"
           value={instrument}
           onChange={(e) => setInstrument(e.target.value)}
-          required
         />
       </label>
 

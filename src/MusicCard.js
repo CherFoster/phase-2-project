@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import { Link } from 'react-router-dom';
 
 function MusicCard({ music }) {
     const [showInfo, setShowInfo] = useState(false);
@@ -15,7 +16,9 @@ function MusicCard({ music }) {
             alt="colors" 
             onClick={handleClick}/>
             <h4>By {music.musician}</h4>
-            {showInfo}
+            {showInfo && (
+                <h3><Link to={music.link}>🎶 Link</Link></h3>
+            )}
         </div>
     )
 }
