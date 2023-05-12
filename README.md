@@ -30,12 +30,15 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 ## Visuals
 
 The Home page lists a couple of websites linked where you can get free sheet music
+
 <a href="https://imgbb.com/"><img src="https://i.ibb.co/XjT35D8/GIF1.gif" alt="GIF1" border="0"></a>
 
 View your uploaded sheet music on the "Saved Sheets" page
+
 <a href="https://imgbb.com/"><img src="https://i.ibb.co/xSHKw3J/GIF2.gif" alt="GIF2" border="0"></a>
 
 Add new music to your list of saved sheets
+
 <a href="https://imgbb.com/"><img src="https://i.ibb.co/PWH2SK8/GIF3.gif" alt="GIF3" border="0"></a>
 
 ## Support
