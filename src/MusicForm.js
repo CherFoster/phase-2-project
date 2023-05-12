@@ -1,6 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { useNavigate } from "react-router-dom";
 
 function MusicForm() {
+
   const defaultImg = "https://clipartspub.com/images/clipart-piano-keyboard-3.png";
 
   const [name, setName] = useState('');
@@ -8,6 +10,8 @@ function MusicForm() {
   const [link, setLink] = useState('');
   const [instrument, setInstrument] = useState('');
   const [image, setImage] = useState('')
+
+  const history = useNavigate();
 
   function handleSubmit(e) {
     e.preventDefault()
@@ -26,9 +30,7 @@ function MusicForm() {
         body: JSON.stringify(formData)
     })
         .then(r => r.json())
-        .then(data => {
-            console.log(data.music)
-        })
+        .then(() => history('/saved'))
 
     setName('');
     setMusician('');

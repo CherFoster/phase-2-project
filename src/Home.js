@@ -10,7 +10,7 @@ function Home() {
             There are thousands of pages of free music sheets online.
             <br/>
             <br/>
-            Check out the links below for free sheet music:
+            Check out a few of the links below for free sheet music:
             <br/>
             <ul className="links">
                 <li><Link to='https://musescore.com/'>🎼 MuseScore</Link></li>

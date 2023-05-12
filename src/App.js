@@ -12,7 +12,7 @@ function App() {
     <div>
       <NavBar />
       <Routes>
-        <Route exact path="/Home" element={<Home />} />
+        <Route exact path="/home" element={<Home />} />
         <Route exact path="/saved" element={<MusicContainer />} />
         <Route exact path="/create" element={<MusicForm />} />
         <Route exact path="/" element={<Home />} />
