@@ -1,22 +1,41 @@
 import React, { useState } from 'react';
 
-const MusicForm = () => {
+function MusicForm() {
+  const defaultImg = "https://clipartspub.com/images/clipart-piano-keyboard-3.png";
+
   const [name, setName] = useState('');
   const [musician, setMusician] = useState('');
   const [link, setLink] = useState('');
   const [instrument, setInstrument] = useState('');
+  const [image, setImage] = useState('')
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Perform any necessary actions with the form data, e.g., API calls, state updates, etc.
-    // Here, you can access the entered values as name, musician, link, and instrument.
+  function handleSubmit(e) {
+    e.preventDefault()
+    const formData = {
+        name: name,
+        musician: musician,
+        image: image,
+        link: link,
+        instrument: instrument
+    }
+    fetch("http://localhost:8000/musicList", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(formData)
+    })
+        .then(r => r.json())
+        .then(data => {
+            console.log(data.music)
+        })
 
-    // Reset form after submission
     setName('');
     setMusician('');
     setLink('');
     setInstrument('');
-  };
+    setImage(defaultImg)
+  }
 
   return (
     <form id='form' onSubmit={handleSubmit}>
