@@ -1,8 +1,8 @@
 import React from 'react';
-import { Switch, Route } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import NavBar from './NavBar';
 import Home from './Home';
-import NewForm from './MusicForm';
+import Saved from './Saved';
 import MusicForm from './MusicForm';
 
 
@@ -10,15 +10,12 @@ function App() {
   return (
     <div>
       <NavBar />
-      <Switch>
-        <Route path="/home">
-          <Home />
-        </Route>
-        <Route path="/about">
-          <About />
-        </Route>
-      </Switch>
-      <MusicForm />
+      <Routes>
+        <Route path="/Home" element={<Home />} />
+        <Route path="/saved" element={<Saved />} />
+        <Route exact path="/create" element={<MusicForm />} />
+        <Route path="/" element={<Home />} />
+      </Routes>
 
     </div>
   );

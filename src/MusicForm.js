@@ -21,7 +21,7 @@ const MusicForm = () => {
   return (
     <form id='form' onSubmit={handleSubmit}>
       <label className='label'>
-        Song Name: 
+        Song Name: <br/>
         <input
           type="text"
           value={name}
@@ -31,7 +31,7 @@ const MusicForm = () => {
       </label>
 
       <label className='label'>
-        Musician:
+        Musician: <br/>
         <input
           type="text"
           value={musician}
@@ -40,7 +40,7 @@ const MusicForm = () => {
       </label>
 
       <label className='label'>
-        Sheet Link:
+        Sheet Link: <br/>
         <input
           type="url"
           value={link}
@@ -50,7 +50,7 @@ const MusicForm = () => {
       </label>
 
       <label className='label'>
-        Instrument:
+        Instrument: <br/>
         <input
           type="text"
           value={instrument}

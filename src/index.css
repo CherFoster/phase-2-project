@@ -86,3 +86,6 @@ form button {
 .label {
   padding: 10px;
 }
+.links {
+  display: inline;
+}
