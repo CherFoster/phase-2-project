@@ -69,6 +69,9 @@ p {
 .navbar a:hover {
   color: hsl(244, 70%, 49%);
 }
+nav a.active {
+  text-decoration: underline;
+}
 form {
   display: flex;
   flex-direction: column;

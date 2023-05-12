@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Route, Routes } from "react-router-dom";
 import NavBar from './NavBar';
 import Home from './Home';
@@ -7,9 +7,10 @@ import MusicForm from './MusicForm';
 
 
 function App() {
+  const [page, setPage] = useState("/")
   return (
     <div>
-      <NavBar />
+      <NavBar onChangePage={setPage} />
       <Routes>
         <Route exact path="/Home" element={<Home />} />
         <Route exact path="/saved" element={<Saved />} />
